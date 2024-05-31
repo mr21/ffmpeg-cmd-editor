@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FFMPEG cmd editor</title>
+<link rel="stylesheet" href="reset.css"/>
+<link rel="stylesheet" href="ffmpeg-cmd-editor.css"/>
+</head>
+<body>
+<div id="root"></div>
+<script>function lg( ...args ) { return console.log( ...args ), args[ 0 ]; }</script>
+<script src="react.min.js"></script>
+<script src="react-dom.min.js"></script>
+<script src="ffmpeg-cmd-editor.js"></script>
+<script>
+ReactDOM.createRoot( document.querySelector( '#root' ) ).render( React.createElement( FFCE ) );
+</script>
+</body>
+</html>

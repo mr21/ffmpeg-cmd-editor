@@ -1,0 +1,86 @@
+html,
+body {
+	height: 100%;
+}
+body {
+	color-scheme: dark;
+	margin: 0;
+	color: #ddd;
+	font-family: sans-serif;
+	background-color: #222;
+}
+
+#root {
+	height: 100%;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	src: url( 'fa-duotone-900.woff2' );
+}
+
+button {
+	cursor: pointer;
+	border: 0;
+	border-radius: 4px;
+	padding: 0 8px;
+	height: 24px;
+	background-color: #fff3;
+}
+input[ type='text' ] {
+	box-sizing: border-box;
+	height: 24px;
+	padding: 0 8px;
+	border-radius: 4px;
+}
+fieldset,
+input[ type='radio' ],
+input[ type='checkbox' ] {
+	margin: 0;
+}
+
+i[ data-icon ] {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	writing-mode: initial;
+	font-family: 'FontAwesome';
+	font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+	text-rendering: auto;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+i::before {
+	position: absolute;
+}
+i::after {
+	opacity: .6;
+}
+
+i[ data-icon='arrows-v' ]::before { content: '\f07d'; }
+i[ data-icon='arrows-v' ]::after { content: '\10f07d'; }
+i[ data-icon='arrows-h' ]::before { content: '\f07e'; }
+i[ data-icon='arrows-h' ]::after { content: '\10f07e'; }
+i[ data-icon='arrow-to-right' ]::before { content: '\f340'; }
+i[ data-icon='arrow-to-right' ]::after { content: '\10f340'; }
+i[ data-icon='arrow-to-left' ]::before { content: '\f33e'; }
+i[ data-icon='arrow-to-left' ]::after { content: '\10f33e'; }
+i[ data-icon='volume-up' ]::before { content: '\f028'; }
+i[ data-icon='volume-up' ]::after { content: '\10f028'; }
+i[ data-icon='volume-slash' ]::before { content: '\f2e2'; }
+i[ data-icon='volume-slash' ]::after { content: '\10f2e2'; }
+i[ data-icon='redo' ]::before { content: '\f01e'; }
+i[ data-icon='redo' ]::after { content: '\10f01e'; }
+i[ data-icon='play' ]::before { content: '\f04b'; }
+i[ data-icon='play' ]::after { content: '\10f04b'; }
+i[ data-icon='pause' ]::before { content: '\f04c'; }
+i[ data-icon='pause' ]::after { content: '\10f04c'; }
+i[ data-icon='pick' ]::before { content: '\f1fb'; } /* eye-dropper */
+i[ data-icon='pick' ]::after { content: '\10f1fb'; }
